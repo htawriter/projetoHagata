@@ -24,7 +24,7 @@
         private bool testeTorreParaRoque(Posicao pos)
         {
             Peca p = tab.peca(pos);
-            return p != null && p is Torre && p.cor = cor && p.qteMovimentos == 0;
+            return p != null && p is Torre && p.cor == cor && p.qteMovimentos == 0;
         }
 
         public override bool[,] movimentosPossiveis()
